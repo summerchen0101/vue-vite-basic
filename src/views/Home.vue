@@ -2,23 +2,37 @@
 </script>
 
 <template>
-  <div class="h-full p-4">
-    <table class="w-full mt-5">
-     <thead>
-       <tr>
-         <th>名稱</th>
-         <th>內容</th>
-       </tr>
-     </thead>
-     <tbody>
-       <tr v-for="t in 10" :key="t">
-         <td>XXX</td>
-         <td>XXX</td>
-       </tr>
-     </tbody>
-   </table>
+  <div class="row g-3 align-items-center mt-2 mb-4">
+    <div class="col-auto">
+      <input type="text" class="form-control" placeholder="請輸入關鍵字">
+    </div>
+    <div class="col-auto">
+      <button class="btn btn-primary">搜尋</button>
+    </div>
+  </div>
+  <div class="table-responsive">
+    <table class="table table-striped table-md">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Header</th>
+          <th scope="col">Header</th>
+          <th scope="col">Header</th>
+          <th scope="col">Header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="n in 15" :key="n">
+          <td>1,001</td>
+          <td>random</td>
+          <td>data</td>
+          <td>placeholder</td>
+          <td>text</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
-<style>
+<style scoped>
 </style>
