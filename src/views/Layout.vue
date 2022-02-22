@@ -3,7 +3,7 @@
 
 <template>
   <div class="h-full">
-    <div class="w-64 fixed left-0 h-full bg-gray-500">
+    <div class="w-64 fixed left-0 h-full bg-blue-500">
 
       <ul class="text-white text-center space-y-4  mt-10">
         <li>
@@ -14,7 +14,7 @@
         </li>
       </ul>
     </div>
-    <div class="ml-64 bg-gray-200 h-full">
+    <div class="ml-64 bg-gray-100 h-full">
       <router-view />
     </div>
   </div>
