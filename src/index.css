@@ -2,6 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  td,
+  th {
+    @apply sm:px-3 sm:py-2.5 text-left text-sm sm:text-base;
+  }
+  thead {
+    @apply hidden sm:table-header-group;
+  }
+  thead tr {
+    @apply text-gray-900 bg-gray-300;
+  }
+  tbody tr {
+    @apply even:bg-white odd:bg-gray-100 flex flex-col p-2 sm:p-0 sm:table-row;
+  }
+  tbody {
+    @apply text-gray-700;
+  }
+  table {
+    @apply w-full sm:w-auto text-gray-800 sm:rounded-t overflow-hidden;
+  }
+}
+
 html,
 body,
 #app {
